@@ -1,1 +1,150 @@
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+
+.description-container {
+    width: 70%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.description-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+.description-container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+a.back-button { 
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6200ea;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+a.back-button:hover { 
+    background-color: #3700b3;
+}
+
+
+.memory-segment {
+    padding: 40px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.memory-segment h3 {
+    font-size: 1.5em;
+}
+
+
+.text-segment {
+    background-color: #4fc3f7;
+    border: 2px solid #0288d1;
+}
+
+
+.data-segment {
+    background-color: #81c784;
+    border: 2px solid #388e3c;
+}
+
+
+.heap-segment {
+    background-color: #ffe082;
+    border: 2px solid #ffb300;
+}
+
+
+.stack-segment {
+    background-color: #f48fb1;
+    border: 2px solid #d81b60;
+}
+
+
+.legend-button button {
+    padding: 10px 20px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.legend-button button:hover {
+    background-color: #3700b3;
+}
+
+
+.legend-container {
+    width: 70%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.legend-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.legend-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.legend-container ul li {
+    font-size: 1.2em;
+    margin: 8px 0;
+}
+
+.legend-container .back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #6200ea;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.legend-container .back-button:hover {
+    background-color: #3700b3;
+}
