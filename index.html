@@ -3,32 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rappresentazione della Memoria</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Simulazione Memoria</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <div class="container">
-        <a href="text-segment.html" class="memory-segment text-segment">
-            <h3>Text Segment</h3>
-        </a>
+    <h1>Visualizzazione della Memoria</h1>
 
-        <a href="data-segment.html" class="memory-segment data-segment">
-            <h3>Data Segment</h3>
-        </a>
+    <div class="legend">
+        <h2>Legenda</h2>
+        <p><strong>Text Segment:</strong> Contiene il codice eseguibile.</p>
+        <p><strong>Data Segment:</strong> Contiene variabili globali e statiche.</p>
+        <p><strong>Heap:</strong> Memoria dinamica allocata durante l'esecuzione.</p>
+        <p><strong>Stack:</strong> Memoria per le chiamate alle funzioni e le variabili locali.</p>
+    </div>
 
-        <a href="heap-segment.html" class="memory-segment heap-segment">
-            <h3>Heap</h3>
-        </a>
+    <div class="memory">
+        <div id="text-segment" class="segment">Text Segment (Codice Eseguibile)</div>
+        <div id="data-segment" class="segment">Data Segment (Variabili Globali e Statiche)</div>
+  
+        <div id="heap" class="segment">
+            <p>Heap (Memoria Dinamica)</p>
 
-        <a href="stack-segment.html" class="memory-segment stack-segment">
-            <h3>Stack</h3>
-        </a>
+            <div class="heap-item">
+                <input type="checkbox" id="alloc1">
+                <label for="alloc1">Allocare Memoria 1</label>
+                <div class="heap-block">Blocco 1</div>
+            </div>
 
-        <a href="legenda.html" class="legend-button">
-            <button>Leggi la Legenda</button>
-        </a>
+            <div class="heap-item">
+                <input type="checkbox" id="alloc2">
+                <label for="alloc2">Allocare Memoria 2</label>
+                <div class="heap-block">Blocco 2</div>
+            </div>
+
+            <div class="heap-item">
+                <input type="checkbox" id="alloc3">
+                <label for="alloc3">Allocare Memoria 3</label>
+                <div class="heap-block">Blocco 3</div>
+            </div>
+        </div>
+
+        <div id="stack" class="segment">
+            <p>Stack (Chiamate di Funzione)</p>
+
+            <div class="stack-item">
+                <input type="checkbox" id="call1">
+                <label for="call1">Chiamata Funzione 1</label>
+                <div class="stack-frame">Funzione 1</div>
+            </div>
+
+            <div class="stack-item">
+                <input type="checkbox" id="call2">
+                <label for="call2">Chiamata Funzione 2</label>
+                <div class="stack-frame">Funzione 2</div>
+            </div>
+
+            <div class="stack-item">
+                <input type="checkbox" id="call3">
+                <label for="call3">Chiamata Funzione 3</label>
+                <div class="stack-frame">Funzione 3</div>
+            </div>
+        </div>
     </div>
 
 </body>
 </html>
+
+
